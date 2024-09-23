@@ -31,4 +31,3 @@ $plugin->requires  = 2022112808;
 $plugin->component = 'enrol_notificationeabc';
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = '4.0.0.1';
-$plugin->cron      = 30;
