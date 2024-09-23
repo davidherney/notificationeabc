@@ -46,7 +46,7 @@ if ($ADMIN->fulltree) {
         get_string('globalenrolalert_help', 'enrol_notificationeabc'),
         '')
     );
-    $settings->add(new admin_setting_configtextarea(
+    $settings->add(new admin_setting_confightmleditor(
         'enrol_notificationeabc/enrolmessage',
         get_string('enrolmessage', 'enrol_notificationeabc'),
         get_string('enrolmessage_help', 'enrol_notificationeabc'),
@@ -67,7 +67,7 @@ if ($ADMIN->fulltree) {
         get_string('globalunenrolalert_help', 'enrol_notificationeabc'),
         '')
     );
-    $settings->add(new admin_setting_configtextarea(
+    $settings->add(new admin_setting_confightmleditor(
         'enrol_notificationeabc/unenrolmessage',
         get_string('unenrolmessage', 'enrol_notificationeabc'),
         get_string('unenrolmessage_help', 'enrol_notificationeabc'),
@@ -88,7 +88,7 @@ if ($ADMIN->fulltree) {
         get_string('globalenrolupdatealert_help', 'enrol_notificationeabc'),
         '')
     );
-    $settings->add(new admin_setting_configtextarea(
+    $settings->add(new admin_setting_confightmleditor(
         'enrol_notificationeabc/enrolupdatemessage',
         get_string('enrolupdatemessage', 'enrol_notificationeabc'),
         get_string('enrolupdatemessage_help', 'enrol_notificationeabc'),

@@ -4,8 +4,16 @@ Send notifications to users when any enrolment event is executed
 
 ## Installation
 
-1. Download Package 
+1. Download Package
 2. Unzip the package inside enrol directory
 4. Go to Site administration-> notifications and press "Update database now"
 
-Compatible with moodle 3.2 and 3.3
+Tested in moodle 4.x
+
+
+## Versions
+
+2024092001 by: David Herney - [BambuCo](https://bambuco.co/):
+- Use HTML editor in messages
+- Fixed: instance enable/disable message.
+- Additional course fields, enrollment fields, and user profile fields have been added to the message template.

@@ -44,14 +44,19 @@ $string['enrolalert_help'] = 'Enable enrol message';
 $string['globalenrolalert'] = 'Enable global enrol message';
 $string['globalenrolalert_help'] = 'Enable site wide enrol message';
 $string['enrolmessage'] = 'Custom enrol message';
-$string['enrolmessage_help'] = 'Personalize the message that users will come to be enrolled. This field accepts the following markers which then will be replaced by the corresponding values ​​dynamically
+$string['enrolmessage_help'] = 'Personalize the message that users will come to be enrolled. This field accepts the following markers which then will be replaced by the corresponding values dynamically
 <pre>
-{COURSENAME} = course fullname
+{COURSEFULLNAME} = course fullname
 {USERNAME} = username
 {FIRSTNAME} = firstname
 {LASTNAME} = lastname
 {URL} = course url
-</pre>';
+Enrolment fields: {ENROLTIMECREATED}, {ENROLTIMEMODIFIED}, {ENROLTIMESTART}, {ENROLTIMEEND}
+Other course fields: {COURSESHORTNAME}, {COURSEIDNUMBER}, {COURSESTARTDATE}, {COURSEENDDATE}
+Other user fields: {IDNUMBER}, {EMAIL}, {COUNTRY}, {CITY}
+Old compatibility fields: {COURSENAME}, {NOMBRE}, {APELLIDO}
+</pre>
+Can use the user profile fields using the following syntax: {PROFILEFIELD_SHORTNAME}. For example, if you have a profile field with the shortname "office", you can use it as {PROFILEFIELD_OFFICE}';
 $string['enrolmessagedefault'] = 'You have been enrolled in {$a->fullname} ({$a->url})';
 
 // Unenrol notifications.
@@ -60,14 +65,18 @@ $string['unenrolalert_help'] = 'Enable unenrol message';
 $string['globalunenrolalert'] = 'Enable global unenrol message';
 $string['globalunenrolalert_help'] = 'Site wide unenrol message';
 $string['unenrolmessage'] = 'Custom unenrol message';
-$string['unenrolmessage_help'] = 'Personalize the message that users will come to be unenrolled. This field accepts the following markers which then will be replaced by the corresponding values ​​dynamically
+$string['unenrolmessage_help'] = 'Personalize the message that users will come to be unenrolled. This field accepts the following markers which then will be replaced by the corresponding values dynamically
 <pre>
-{COURSENAME} = course fullname
+{COURSEFULLNAME} = course fullname
 {USERNAME} = username
 {FIRSTNAME} = firstname
 {LASTNAME} = lastname
 {URL} = course url
-</pre>';
+Other course fields: {COURSESHORTNAME}, {COURSEIDNUMBER}, {COURSESTARTDATE}, {COURSEENDDATE}
+Other user fields: {IDNUMBER}, {EMAIL}, {COUNTRY}, {CITY}
+Old compatibility fields: {COURSENAME}, {NOMBRE}, {APELLIDO}
+</pre>
+Can use the user profile fields using the following syntax: {PROFILEFIELD_SHORTNAME}. For example, if you have a profile field with the shortname "office", you can use it as {PROFILEFIELD_OFFICE}';
 $string['unenrolmessagedefault'] = 'You have been unenrolled from {$a->fullname} ({$a->url})';
 
 // Update enrol notifications.
@@ -76,12 +85,17 @@ $string['enrolupdatealert_help'] = 'Enable enrol update message';
 $string['globalenrolupdatealert'] = 'Enable global enrol update message';
 $string['globalenrolupdatealert_help'] = 'Site wide enrol update message';
 $string['enrolupdatemessage'] = 'Custom enrol update message';
-$string['enrolupdatemessage_help'] = 'Personalize the message that users will come to be updated. This field accepts the following markers which then will be replaced by the corresponding values ​​dynamically
+$string['enrolupdatemessage_help'] = 'Personalize the message that users will come to be updated. This field accepts the following markers which then will be replaced by the corresponding values dynamically
 <pre>
-{COURSENAME} = course fullname
+{COURSEFULLNAME} = course fullname
 {USERNAME} = username
 {FIRSTNAME} = firstname
 {LASTNAME} = lastname
 {URL} = course url
-</pre>';
+Enrolment fields: {ENROLTIMECREATED}, {ENROLTIMEMODIFIED}, {ENROLTIMESTART}, {ENROLTIMEEND}
+Other course fields: {COURSESHORTNAME}, {COURSEIDNUMBER}, {COURSESTARTDATE}, {COURSEENDDATE}
+Other user fields: {IDNUMBER}, {EMAIL}, {COUNTRY}, {CITY}
+Old compatibility fields: {COURSENAME}, {NOMBRE}, {APELLIDO}
+</pre>
+Can use the user profile fields using the following syntax: {PROFILEFIELD_SHORTNAME}. For example, if you have a profile field with the shortname "office", you can use it as {PROFILEFIELD_OFFICE}';
 $string['enrolupdatemessagedefault'] = 'Your enrolment to {$a->fullname} has been updated ({$a->url})';
