@@ -55,7 +55,7 @@ class enrol_notificationeabc_observer
 
         $course = $DB->get_record('course', ['id' => $event->courseid]);
         // Not set message for hidden courses.
-        if (!$course->visible) {
+        if (!$course->visible && !$pluginconfig->includehiddencourses) {
             return;
         }
 
@@ -115,7 +115,7 @@ class enrol_notificationeabc_observer
 
         $course = $DB->get_record('course', ['id' => $event->courseid]);
         // Not set message for hidden courses.
-        if (!$course->visible) {
+        if (!$course->visible && !$pluginconfig->includehiddencourses) {
             return;
         }
 
@@ -177,7 +177,7 @@ class enrol_notificationeabc_observer
 
         $course = $DB->get_record('course', ['id' => $event->courseid]);
         // Not set message for hidden courses.
-        if (!$course->visible) {
+        if (!$course->visible && !$pluginconfig->includehiddencourses) {
             return;
         }
 

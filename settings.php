@@ -94,4 +94,12 @@ if ($ADMIN->fulltree) {
         get_string('enrolupdatemessage_help', 'enrol_notificationeabc'),
         null)
     );
+
+    // Include hidden courses.
+    $settings->add(new admin_setting_configcheckbox(
+        'enrol_notificationeabc/includehiddencourses',
+        get_string('includehiddencourses', 'enrol_notificationeabc'),
+        get_string('includehiddencourses_help', 'enrol_notificationeabc'),
+        '')
+    );
 }
